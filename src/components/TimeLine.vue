@@ -1,5 +1,5 @@
 <template>
-  <section :style="{backgroundImage:`url(${bg_event})`,height:`100%`,backgroundPposition: `center`,
+  <section :style="{backgroundImage:`url(${bg_event})`,height:`100%`,backgroundPosition: `center`,
   backgroundRepeat: `no-repeat`,
   backgroundSize: `cover`}" class="w-screen" >
     <div class="bg-black bg-opacity-80 text-white py-2 h-full">

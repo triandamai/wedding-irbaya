@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen">
     <!-- partial:index.partial.html -->
-    <section id="media" class="flex flex-col" :style="{backgroundImage:`url(${bg})`,height:`100%`,backgroundPposition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
+    <section id="media" class="flex flex-col" :style="{backgroundImage:`url(${bg})`,height:`100%`,backgroundPosition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
       <div class="wrap bg-black h-full bg-opacity-50 flex flex-col">
         <div class="title mt-10">
           <h1>Dewi Irbaya MH </h1>
@@ -20,9 +20,9 @@
         </a>
       </div>
 
-      <div class="music">
-        <audio src="../assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
-      </div>
+<!--      <div class="music">-->
+<!--        <audio src="../assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>-->
+<!--      </div>-->
 
     </section>
 

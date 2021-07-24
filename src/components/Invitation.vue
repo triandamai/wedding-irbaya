@@ -1,13 +1,13 @@
 <template>
   <div class="h-screen">
-  <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
 
-  <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
-  <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration">
+    <img alt="image-top-right" class="top-right-decoration" src="https://i.imgur.com/dGOOfnA.png">
+    <img alt="image-top-left" class="top-left-decoration" src="https://i.imgur.com/t6ffnbn.png">
 
     <div class="flex-col justify-center mt-16">
       <section id="media" class="w-full flex justify-center">
-        <img src="../assets/img/invitation.jpg" class=" rounded-full h-56 w-56">
+        <img class=" rounded-full h-56 w-56" src="../assets/img/invitation.jpg">
       </section>
       <p class="dance-med">
         Dear
@@ -25,9 +25,7 @@
         </a>
       </div>
 
-      <div class="music">
-        <audio :src="import('../assets/mp3/song.mp3')" id="my_audio" loop="loop"></audio>
-      </div>
+
     </div>
 
   </div>
@@ -35,6 +33,7 @@
 
 <script>
 import {defineComponent} from "vue"
+
 export default defineComponent({})
 </script>
 
@@ -49,20 +48,93 @@ img {
   height: auto;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .top-right-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    display: block;
+  }
 
-.top-right-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
+  .top-left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    display: block;
+  }
 }
 
-.top-left-decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .top-right-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .top-left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .top-right-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .top-left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .top-right-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .top-left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .top-right-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .top-left-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
 
 .title h1 {
   font-family: 'Dancing Script', cursive;
