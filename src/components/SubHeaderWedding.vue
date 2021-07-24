@@ -1,36 +1,33 @@
 <template>
-  <div class="px-6 py-8 w-screen">
+  <div class="px-4 pt-2 pb-6 mb-10 w-screen">
     <!-- partial:index.partial.html -->
 
     <section id="media"></section>
-    <div class="wrap">
-      <div class="title mt-10 mx-6">
-        <h1>Assalamualaikum.wr.wb </h1>
-        <h3>Sabtu, 03 Oktober 2020</h3>
-        <p>Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah
+    <div >
+      <div class="title mt-4 mx-6 flex flex-col justify-between">
+        <h1 class="text-center" >Assalamualaikum.wr.wb </h1>
+        <h3 class="text-center">Sabtu, 03 Oktober 2020</h3>
+        <p class="text-center">Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah
           tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
           keberkahan.</p>
       </div>
     </div>
     <!--      -->
-    <div class="flex flex-row justify-between px-6">
+    <div class="justify-center w-full px-2 ">
         <!--          perempuan-->
-        <div class="title-couple">
-          <h1>Dewi Irbaya MH</h1>
-          <h2>Putri Bapak Suminto & Ibu Tarmini</h2>
+        <div class="title-couple mb-2">
+          <h1 class="text-center">Dewi Irbaya MH</h1>
+          <h2 class="text-center">Putri Bapak Suminto & Ibu Tarmini</h2>
 
         </div>
 
-      <div>
-        <!--          foto-->
-      </div>
-
+        <div class="flex w-full justify-center">
+          <img src="../assets/img/invitation.jpg" class="rounded-full  object-center  w-2/3 sm:w-full md:w-1/4"/>
+        </div>
         <!--          laki-->
         <div class="title-couple">
-          <h1>Dewi Irbaya MH</h1>
-          <h2>Putri Bapak Suminto & Ibu Tarmini</h2>
-
-
+          <h1 class="text-center">Dewi Irbaya MH</h1>
+          <h2 class="text-center">Putri Bapak Suminto & Ibu Tarmini</h2>
       </div>
     </div>
   </div>
@@ -53,90 +50,313 @@ img {
   height: auto;
 }
 
-@media (max-width: 900px) {
-  img {
-    max-width: 30%;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #3a1a95;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+  .title-couple h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title-couple h2 {
+
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
   }
 }
 
-.top-right-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .title-couple h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title-couple h2 {
+
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: #e25c67;
+    line-height: 1;
+  }
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
 }
 
-.top-left-decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-}
-.title-couple h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 30px;
-  margin: 32px 0;
-  color: #3a1a95;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title-couple h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title-couple h2 {
+
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #e25c67;
+    line-height: 1;
+  }
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
 }
 
-.title-couple h2 {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title-couple h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
 
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #e25c67;
-  line-height: 1;
-}
-.title h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 60px;
-  margin: 32px 0;
-  color: #3a1a95;
+  .title-couple h2 {
+
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #e25c67;
+    line-height: 1;
+  }
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
 }
 
-.title h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  color: #e25c67;
-  line-height: 1;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title-couple h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title-couple h2 {
+
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #e25c67;
+    line-height: 1;
+  }
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    margin: 32px 0;
+    color: #3a1a95;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
 }
 
-.dance-med {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bolder;
-  font-style: normal;
-  font-size: 32px;
-  color: #674ea7;
-  margin: 16px;
-  text-align: center;
-}
-
-.title h3 {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 24px;
-  color: #d7740e;
-  margin-top: 5px;
-}
-
-.title p {
-  color: #564861;
-  margin: 30px 0 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 12px;
-}
 
 .wrap {
   display: -webkit-flex;

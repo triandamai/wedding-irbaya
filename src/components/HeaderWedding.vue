@@ -1,17 +1,23 @@
 <template>
   <div class="h-screen">
     <!-- partial:index.partial.html -->
-    <section id="media" :style="{backgroundImage:`url(${bg})`,height:`100%`,backgroundPposition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
-      <div class="wrap bg-black h-full bg-opacity-50">
+    <section id="media" class="flex flex-col" :style="{backgroundImage:`url(${bg})`,height:`100%`,backgroundPposition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
+      <div class="wrap bg-black h-full bg-opacity-50 flex flex-col">
         <div class="title mt-10">
           <h1>Dewi Irbaya MH </h1>
           <h2>&</h2>
-          <h1>Fanuruh Muhamad</h1>
+          <h1 >Fanuruh Muhamad</h1>
           <h3>Are getting married</h3>
           <p>
             on <span class="date">8 August 2021</span>
           </p>
+
         </div>
+        <a class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce animate-ping animate-pulse" fill="none" viewBox="0 0 24 24" stroke="#ffff">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+          </svg>
+        </a>
       </div>
 
       <div class="music">
@@ -44,72 +50,213 @@ img {
   height: auto;
 }
 
-@media (max-width:900px) {
-  img {
-    max-width: 30%;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #ffffff;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #ff8207;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #0ec2c2;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
   }
 }
 
-.top-right-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #ffffff;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #0ec2c2;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
 }
 
-.top-left-decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #ffffff;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #0ec2c2;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
 }
 
-.title h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 60px;
-  margin: 32px 0;
-  color: #ffffff;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #ffffff;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #564861;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
 }
 
-.title h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  color: #e25c67;
-  line-height: 1;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #ffffff;
+  }
+
+  .title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e25c67;
+    line-height: 1;
+  }
+
+
+  .title h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #d7740e;
+    margin-top: 5px;
+  }
+
+  .title p {
+    color: #0ec2c2;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
 }
 
-.dance-med {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bolder;
-  font-style: normal;
-  font-size: 32px;
-  color: #674ea7;
-  margin: 16px;
-  text-align: center;
-}
 
-.title h3 {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 24px;
-  color: #d7740e;
-  margin-top: 5px;
-}
-
-.title p {
-  color: #564861;
-  margin: 30px 0 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 16px;
-}
 
 .wrap {
   display: -webkit-flex;
@@ -133,111 +280,24 @@ img {
   margin-bottom: 40px;
 }
 
-#time {
-  width: auto;
-  height: auto;
-  padding: 20px;
-  background-color: #eee;
-  border-radius: 20px;
-  font-size: 16px;
-}
-
-.venue {
-  width: auto;
-  height: auto;
-  background-color: #674ea7;
-  border-radius: 16px;
-  text-align: center;
-  color: #fff;
-  padding: 8px;
-
-}
 
 .venue a {
   text-decoration: none;
   color: #fff;
 }
 
-.container {
-  display: grid;
 
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.block {
-  width: 180px;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.days {
-  background: linear-gradient(90deg, #b33a46, #9b313c);
-}
-
-.hours {
-  background: linear-gradient(90deg, #a7c3cd, #90a9b2);
-}
-
-.minutes {
-  background-color: #874562;
-}
-
-.seconds {
-  background-color: #145689;
-}
 
 .date {
-  color: #874562;
+  color: #ffffff;
   font-weight: 900;
-}
 
-.place {
-  color: #874562;
-  font-weight: 900;
-}
-
-.footer {
-  color: #564861;
-  text-align: center;
-  font-size: 16px;
-  margin: 24px;
-}
-
-.phone {
-  color: #874562
-}
-
-.end-msg {
-  width: auto;
-  height: auto;
-  padding: 12px;
-  background: linear-gradient(90deg, #b33a46, #9b313c);
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-  font-size: 24px;
 }
 
 a {
   text-decoration: none;
 }
 
-.happiness {
-  color: #874562;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.twitter {
-  color: #874562;
-}
 
 .music {
   display: none;

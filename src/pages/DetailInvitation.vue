@@ -5,6 +5,7 @@
     <TimeLine/>
     <Gallery/>
     <MapSection/>
+    <ProtokolKesehatan/>
     <Bottomnavigation/>
   </div>
 </template>
@@ -17,8 +18,10 @@ import Gallery from "../components/Gallery.vue";
 import HeaderWedding from "../components/HeaderWedding.vue";
 import SubHeaderWedding from "../components/SubHeaderWedding.vue";
 import MapSection from "../components/MapSection.vue";
+import ProtokolKesehatan from "../components/ProtokolKesehatan.vue";
 export default defineComponent({
 components:{
+  ProtokolKesehatan,
   MapSection,
   SubHeaderWedding,
   HeaderWedding,

@@ -20,7 +20,7 @@
       </div>
 
       <div class="actions">
-        <a class="container flex flex-row" @click="$router.push({path:'we-are-merried'})">
+        <a class="container cursor-pointer flex flex-row" @click="$router.push({path:'we-are-merried'})">
           <div class="venue w-full">Buka Undangan</div>
         </a>
       </div>
@@ -49,11 +49,6 @@ img {
   height: auto;
 }
 
-@media (max-width:900px) {
-  img {
-    max-width: 30%;
-  }
-}
 
 .top-right-decoration {
   position: absolute;
