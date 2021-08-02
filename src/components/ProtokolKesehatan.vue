@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-11 px-4 pb-10 mb-10">
+  <div class="container mx-auto mt-11 px-4 pb-10 mb-10 h-full">
     <h3 class="w-full text-center">Protocol Kesehatan</h3>
     <h4 class="w-full text-center text-sm mt-2">Untuk mematuhi himbauan pemerintah dalam pencegahan penyebaran Covid-19, maka diharapkan Bapak/Ibu/saudara/i tamu undangan unutk:</h4>
   <div class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
@@ -67,20 +67,13 @@
       </div>
       <div class="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
         <div>
-
           <ul class="mt-4 space-y-4">
             <li class="text-base text-center">
               <a href="#" class="font-medium wrap text-gray-900 hover:text-gray-700">
                 Terima kasih atas pengertian Bapak/Ibu/Saudara/i, semoga dengan melakukan protokol kesehatan di atas, kita semua dapat terjaga dari Covid-19.
               </a>
             </li>
-
-
-
           </ul>
-        </div>
-        <div class="mt-5 text-sm mb-10">
-          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Tonton Siaran Langsung <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </div>

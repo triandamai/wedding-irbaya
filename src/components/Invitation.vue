@@ -15,26 +15,37 @@
       <div class="wrap">
         <div class="title">
           <h4> Bpk/Ibu/Saudara/i</h4>
-          <h1>Fanuruh Muhamad</h1>
+          <h1>{{ guest }}</h1>
         </div>
       </div>
 
       <div class="actions">
-        <a class="container cursor-pointer flex flex-row" @click="$router.push({path:'we-are-merried'})">
+        <a class="container cursor-pointer flex flex-row" @click="gotoInvitationDetail">
           <div class="venue w-full">Buka Undangan</div>
         </a>
       </div>
-
-
     </div>
-
   </div>
 </template>
 
 <script>
 import {defineComponent} from "vue"
+import {useRoute,useRouter} from "vue-router"
 
-export default defineComponent({})
+export default defineComponent({
+ setup(){
+   const route = useRoute()
+   const router = useRouter()
+   const gotoInvitationDetail=()=>{
+     router.push({path:'/we-are-merried'})
+   }
+   return{
+     guest:route.params.guest,
+     gotoInvitationDetail
+   }
+ }
+
+})
 </script>
 
 <style scoped>

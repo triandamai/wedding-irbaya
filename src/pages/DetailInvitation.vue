@@ -3,9 +3,9 @@
     <HeaderWedding/>
     <SubHeaderWedding/>
     <TimeLine/>
-    <Gallery/>
     <MapSection/>
     <ProtokolKesehatan/>
+    <LoveGift/>
     <Bottomnavigation/>
   </div>
 </template>
@@ -19,6 +19,7 @@ import HeaderWedding from "../components/HeaderWedding.vue";
 import SubHeaderWedding from "../components/SubHeaderWedding.vue";
 import MapSection from "../components/MapSection.vue";
 import ProtokolKesehatan from "../components/ProtokolKesehatan.vue";
+import LoveGift from "../components/LoveGift.vue";
 export default defineComponent({
 components:{
   ProtokolKesehatan,
@@ -27,7 +28,8 @@ components:{
   HeaderWedding,
   Bottomnavigation,
   TimeLine,
-  Gallery
+  Gallery,
+  LoveGift
 }
 })
 </script>

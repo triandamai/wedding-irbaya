@@ -11,7 +11,7 @@ export default createRouter({
                     redirect:"invitation"
                 },
                 {
-                    path:"invitation",
+                    path:"invitation/:guest",
                     name:"invitation",
                     component:()=> import("../pages/Invitation.vue")
                 },

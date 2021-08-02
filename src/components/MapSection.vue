@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto mt-11 px-4">
     <h3 class="w-full text-center">Location</h3>
-    <div ref="mapDiv" style="width: 100%; height: 80vh" />
+    <div ref="mapDiv" style="width: 100%; height: 40vh" />
   </div>
 </template>
 
