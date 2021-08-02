@@ -6,28 +6,29 @@
     <div >
       <div class="title mt-4 mx-6 flex flex-col justify-between">
         <h1 class="text-center" >Assalamualaikum.wr.wb </h1>
-        <h3 class="text-center">Sabtu, 03 Oktober 2020</h3>
-        <p class="text-center">Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah
-          tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
-          keberkahan.</p>
+        <p class="text-center">Mahasuci Allah telah menciptakan manusia dengan berpasang-pasangan. Sungguh besar rahmat dan karunia yang diberikan-Nya kepada keluarga Kami. Maka izinkan kami mengundang secara virtual dan mengharapkan doa restu dari bapak/ibu dalam acara pernikahan putra & putri kami.</p>
       </div>
     </div>
     <!--      -->
     <div class="justify-center w-full px-2 ">
         <!--          perempuan-->
         <div class="title-couple mb-2">
+          <div class="flex w-full justify-center">
+            <img src="../assets/img/invitation.jpg" class="rounded-full  object-center  w-1/3 sm:w-full md:w-1/4"/>
+          </div>
           <h1 class="text-center">Dewi Irbaya MH</h1>
           <h2 class="text-center">Putri Bapak Suminto & Ibu Tarmini</h2>
-
         </div>
 
-        <div class="flex w-full justify-center">
-          <img src="../assets/img/invitation.jpg" class="rounded-full  object-center  w-2/3 sm:w-full md:w-1/4"/>
-        </div>
+
+
         <!--          laki-->
         <div class="title-couple">
-          <h1 class="text-center">Dewi Irbaya MH</h1>
-          <h2 class="text-center">Putri Bapak Suminto & Ibu Tarmini</h2>
+          <div class="flex w-full justify-center">
+            <img src="../assets/img/invitation.jpg" class="rounded-full  object-center  w-1/3 sm:w-full md:w-1/4"/>
+          </div>
+          <h1 class="text-center">Fanuruh Muhamad</h1>
+          <h2 class="text-center">Putra dari Bapak Muhamad Maulud dan Ibu Endang Murtiasih</h2>
       </div>
     </div>
   </div>
@@ -107,7 +108,7 @@ img {
   .title p {
     color: #564861;
     margin: 30px 0 20px;
-    text-transform: uppercase;
+
     letter-spacing: 3px;
     font-size: 10px;
   }
@@ -158,7 +159,7 @@ img {
 
   .title h3 {
     font-weight: 300;
-    text-transform: uppercase;
+
     letter-spacing: 5px;
     font-size: 24px;
     color: #d7740e;
@@ -168,7 +169,7 @@ img {
   .title p {
     color: #564861;
     margin: 30px 0 20px;
-    text-transform: uppercase;
+
     letter-spacing: 3px;
     font-size: 12px;
   }
@@ -280,7 +281,7 @@ img {
 
   .title h3 {
     font-weight: 300;
-    text-transform: uppercase;
+
     letter-spacing: 5px;
     font-size: 24px;
     color: #d7740e;
@@ -290,7 +291,7 @@ img {
   .title p {
     color: #564861;
     margin: 30px 0 20px;
-    text-transform: uppercase;
+
     letter-spacing: 3px;
     font-size: 12px;
   }
@@ -341,7 +342,7 @@ img {
 
   .title h3 {
     font-weight: 300;
-    text-transform: uppercase;
+
     letter-spacing: 5px;
     font-size: 24px;
     color: #d7740e;
@@ -351,7 +352,6 @@ img {
   .title p {
     color: #564861;
     margin: 30px 0 20px;
-    text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 12px;
   }
