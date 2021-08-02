@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-11 px-4 pb-10 mb-10 h-full">
+  <div class="container mx-auto mt-11 px-4 pb-10 mb-10 h-2/3">
     <h3 class="w-full text-center">Protocol Kesehatan</h3>
     <h4 class="w-full text-center text-sm mt-2">Untuk mematuhi himbauan pemerintah dalam pencegahan penyebaran Covid-19, maka diharapkan Bapak/Ibu/saudara/i tamu undangan unutk:</h4>
   <div class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">

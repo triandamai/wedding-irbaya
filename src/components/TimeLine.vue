@@ -36,6 +36,7 @@
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                 Kediaman mempelai wanita. Perumahan Grand Tanjung Elok. Jl Pinus 1 Nomor 1, Purwokerto Selatan, Banyumas.
                </dd>
+              <MapSection/>
             </div>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 justify-center">
@@ -62,7 +63,9 @@
 <script>
 import {defineComponent} from "vue";
 import bg_event from "../assets/img/bg_event_2.jpg"
+import MapSection from "./MapSection.vue";
 export default defineComponent({
+  components: {MapSection},
   setup(){
     return{bg_event}
   }

@@ -30,7 +30,7 @@
                 </a>
               </div>
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 justify-center text-center">
-                Terima Kasih
+
               </dd>
 
             </div>
@@ -41,8 +41,9 @@
       </div>
       <div class="shadow overflow-hidden w-full sm:rounded-lg px-8 ">
         <div class="rounded-md shadow w-full flex flex-col">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700">
-            Lihat online
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border text-center border-transparent text-base font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700">
+            Ucapkan Selamat & Do'a Untuk:<br/>
+            Irbaya & Fanuruh
           </a>
         </div>
       </div>

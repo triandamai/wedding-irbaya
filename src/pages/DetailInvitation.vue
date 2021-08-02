@@ -3,7 +3,6 @@
     <HeaderWedding/>
     <SubHeaderWedding/>
     <TimeLine/>
-    <MapSection/>
     <ProtokolKesehatan/>
     <LoveGift/>
     <Bottomnavigation/>
