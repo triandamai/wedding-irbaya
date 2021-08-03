@@ -5,11 +5,11 @@
   backgroundSize: `cover`}" >
     <div class="bg-black bg-opacity-80 text-white py-2">
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="shadow sm:rounded-lg px-8">
-        <div class="px-4 py-5 sm:px-6">
+      <div class="shadow sm:rounded-lg px-8 md:mx-20">
+        <div class="px-4 py-5 sm:px-6 mt-10">
           <h1 class="text-center" > InsyaAllah akan diselenggarakan pada:</h1>
         </div>
-        <div class="border-t border-gray-200">
+        <div class=" rounded-md">
           <dl>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt class="text-sm font-medium text-gray-500">
@@ -44,10 +44,9 @@
             </div>
 
           </dl>
-
         </div>
       </div>
-      <div class="shadow overflow-hidden w-full sm:rounded-lg px-8 ">
+      <div class="shadow overflow-hidden sm:rounded-lg px-8 md:mx-20 mb-10">
         <div class="rounded-md shadow w-full flex flex-col">
           <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700">
             Lihat online

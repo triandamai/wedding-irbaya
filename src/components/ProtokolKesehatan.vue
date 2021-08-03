@@ -1,9 +1,9 @@
 <template>
-  <div class=" mx-auto mt-11 px-4 pb-10">
+  <div class=" mt-11 px-4 pb-10">
       <h3 class="w-full text-center">Protocol Kesehatan</h3>
       <h4 class="w-full text-center text-xs mt-2 px-2">Untuk mematuhi himbauan pemerintah dalam pencegahan penyebaran Covid-19, maka diharapkan Bapak/Ibu/saudara/i tamu undangan untuk:</h4>
       <div class=" mt-3 px-2 w-screen sm:px-0">
-        <div class=" shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+        <div class=" shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden md:mx-20">
           <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
             <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
               <!-- Heroicon name: outline/support -->

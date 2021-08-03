@@ -9,7 +9,7 @@
           <h1 >Fanuruh Muhamad</h1>
           <h3>Are getting married</h3>
           <p>
-            <span class="date">8th August 2021</span>
+            <span class="date">8<sup>th</sup> August 2021</span>
           </p>
 
         </div>
