@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen">
+  <div class="">
     <!-- partial:index.partial.html -->
-    <section id="media" class="flex flex-col" :style="{backgroundImage:`url(${bg})`,height:`100%`,backgroundPosition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
+    <section id="media" class="flex flex-col" :style="{backgroundImage:`url(${bg})`,height:`100vh`,backgroundPosition: `center`,backgroundRepeat: `no-repeat`,backgroundSize: `cover`}">
       <div class="wrap bg-black h-full bg-opacity-50 flex flex-col">
         <div class="title mt-10">
           <h1>Dewi Irbaya MH </h1>
@@ -31,7 +31,7 @@
 
 <script>
 import {defineComponent} from "vue"
-import bg from "../assets/img/bg_event.jpg"
+import bg from "../assets/img/bg_event.webp"
 export default defineComponent({
   setup(){
     return{bg}

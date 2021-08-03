@@ -1,15 +1,13 @@
 <template>
+<div class="">
   <section :style="{backgroundImage:`url(${bg_event})`,height:`100%`,backgroundPosition: `center`,
   backgroundRepeat: `no-repeat`,
-  backgroundSize: `cover`}" class="w-screen" >
-    <div class="bg-black bg-opacity-80 text-white py-2 h-full">
+  backgroundSize: `cover`}" >
+    <div class="bg-black bg-opacity-80 text-white py-2">
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="shadow overflow-hidden sm:rounded-lg px-8">
+      <div class="shadow sm:rounded-lg px-8">
         <div class="px-4 py-5 sm:px-6">
-
-          <p class="mt-1 max-w-2xl text-sm text-gray-500 text-center">
-            InsyaAllah akan diselenggarakan pada:
-          </p>
+          <h1 class="text-center" > InsyaAllah akan diselenggarakan pada:</h1>
         </div>
         <div class="border-t border-gray-200">
           <dl>
@@ -35,12 +33,12 @@
               </dt>
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                 Kediaman mempelai wanita. Perumahan Grand Tanjung Elok. Jl Pinus 1 Nomor 1, Purwokerto Selatan, Banyumas.
-               </dd>
+              </dd>
               <MapSection/>
             </div>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 justify-center">
-                *Mengingat situasi dan kondisi yang tidak memungkinkan di masa pandemi COVID-19 ini, kami sekeluarga memohon maaf karena tidak bisa mengundang tamu.
+              <dd class="mt-1 text-xs text-gray-900 sm:mt-0 sm:col-span-2 justify-center">
+                Mengingat situasi dan kondisi yang tidak memungkinkan di masa pandemi COVID-19 ini, kami sekeluarga memohon maaf karena tidak bisa mengundang tamu.
                 Untuk dapat melihat proses akad dapat melalui link berikut
               </dd>
             </div>
@@ -58,6 +56,7 @@
       </div>
     </div>
   </section>
+</div>
 </template>
 
 <script>

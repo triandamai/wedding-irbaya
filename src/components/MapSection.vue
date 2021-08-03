@@ -9,13 +9,13 @@
 import { computed, ref, onMounted, onUnmounted, watch ,defineComponent} from 'vue'
 import { useGeolocation } from '../common/geoLocation.js'
 import { Loader } from '@googlemaps/js-api-loader'
-const GOOGLE_MAPS_API_KEY = 'AIzaSyBzmxk4CZxTXwUG4t0Eoe8A1MdKIMLnWfI'
+const GOOGLE_MAPS_API_KEY = 'AIzaSyA-R3eTNSF8z5mL5KmRT8mJJcENDBW5qMU'
 export default defineComponent({
   setup(){
     const { coords } = useGeolocation()
     const currPos = computed(() => ({
-      lat: coords.value.latitude,
-      lng: coords.value.longitude
+      lat: -7.436804,//coords.value.latitude,
+      lng: 109.231368//coords.value.longitude
     }))
     const otherPos = ref(null)
     const loader = new Loader({ apiKey: GOOGLE_MAPS_API_KEY })
@@ -26,12 +26,14 @@ export default defineComponent({
       await loader.load()
       map.value = new google.maps.Map(mapDiv.value, {
         center: currPos.value,
-        zoom: 7
+        zoom: 15
       })
       clickListener = map.value.addListener(
           'click',
-          ({ latLng: { lat, lng } }) =>
-              (otherPos.value = { lat: lat(), lng: lng() })
+          ({ latLng: { lat, lng } }) =>{
+            console.log("yea")
+          }
+              // (otherPos.value = { lat: lat(), lng: lng() })
       )
     })
     onUnmounted(async () => {

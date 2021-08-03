@@ -1,19 +1,19 @@
 <template>
-  <div class="w-full h-screen">
+  <div class="w-full flex flex-col">
     <HeaderWedding/>
     <SubHeaderWedding/>
     <TimeLine/>
     <ProtokolKesehatan/>
     <LoveGift/>
-    <Bottomnavigation/>
+<!--<Bottomnavigation class="fixed"/>-->
   </div>
 </template>
 
 <script>
+sakura.stop()
 import {defineComponent} from "vue"
 import TimeLine from "../components/TimeLine.vue";
 import Bottomnavigation from "../components/Bottomnavigation.vue";
-import Gallery from "../components/Gallery.vue";
 import HeaderWedding from "../components/HeaderWedding.vue";
 import SubHeaderWedding from "../components/SubHeaderWedding.vue";
 import MapSection from "../components/MapSection.vue";
@@ -27,7 +27,6 @@ components:{
   HeaderWedding,
   Bottomnavigation,
   TimeLine,
-  Gallery,
   LoveGift
 }
 })

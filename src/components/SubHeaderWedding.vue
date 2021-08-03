@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-2 pb-6 mb-10 w-screen">
+  <div class="px-4 pt-2 pb-6 mb-10">
     <!-- partial:index.partial.html -->
 
     <section id="media"></section>
@@ -14,10 +14,10 @@
         <!--          perempuan-->
         <div class="title-couple mb-2">
           <div class="flex w-full justify-center">
-            <img src="../assets/img/irbaya.JPG" style="width: 90px;height: 90px;" class="rounded-full object-center h-1/3 w-1/3 sm:w-full md:w-1/4" alt="Irbaya" />
+            <img src="../assets/img/irbaya.jpg" style="width: 90px;height: 90px;" class="rounded-full object-center h-1/3 w-1/3 sm:w-full md:w-1/4" alt="Irbaya" />
           </div>
           <h1 class="text-center">Dewi Irbaya MH</h1>
-          <h2 class="text-center">Putri Bapak Suminto MH & Ibu Tarmini</h2>
+          <h2 class="text-center">Putri dari Bapak Suminto MH & Ibu Tarmini</h2>
         </div>
 
         <!--          laki-->

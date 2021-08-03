@@ -1,13 +1,12 @@
 <template>
   <div class="h-screen">
     <!-- partial:index.partial.html -->
-
     <img alt="image-top-right" class="top-right-decoration" src="https://i.imgur.com/dGOOfnA.png">
     <img alt="image-top-left" class="top-left-decoration" src="https://i.imgur.com/t6ffnbn.png">
 
     <div class="flex-col justify-center mt-16">
       <section id="media" class="w-full flex justify-center">
-        <img class=" rounded-full h-56 w-56" src="../assets/img/invitation.jpg">
+        <img class=" rounded-full w-1/2" src="../assets/img/amplo.jpg">
       </section>
       <p class="dance-med">
         Dear
@@ -19,7 +18,7 @@
         </div>
       </div>
 
-      <div class="actions">
+      <div class="actions mx-6">
         <a class="container cursor-pointer flex flex-row" @click="gotoInvitationDetail">
           <div class="venue w-full">Buka Undangan</div>
         </a>
@@ -242,7 +241,6 @@ img {
   text-align: center;
   color: #fff;
   padding: 8px;
-  margin-right: 8px;
 }
 
 .venue a {
@@ -257,87 +255,15 @@ img {
   overflow: hidden;
 }
 
-.block {
-  width: 180px;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
 
-.days {
-  background: linear-gradient(90deg, #b33a46, #9b313c);
-}
-
-.hours {
-  background: linear-gradient(90deg, #a7c3cd, #90a9b2);
-}
-
-.minutes {
-  background-color: #874562;
-}
-
-.seconds {
-  background-color: #145689;
-}
-
-.date {
-  color: #874562;
-  font-weight: 900;
-}
-
-.place {
-  color: #874562;
-  font-weight: 900;
-}
-
-.footer {
-  color: #564861;
-  text-align: center;
-  font-size: 16px;
-  margin: 24px;
-}
-
-.phone {
-  color: #874562
-}
-
-.end-msg {
-  width: auto;
-  height: auto;
-  padding: 12px;
-  background: linear-gradient(90deg, #b33a46, #9b313c);
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-  font-size: 24px;
-}
 
 a {
   text-decoration: none;
 }
 
-.happiness {
-  color: #874562;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.twitter {
-  color: #874562;
-}
-
-.music {
-  display: none;
-}
-
 .actions {
   display: flex;
   font-size: 12px;
-  letter-spacing: 0pt;
+
 }
 </style>
