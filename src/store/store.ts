@@ -28,6 +28,7 @@ const currentIndex = ref(0)
 const useStore=()=>{
     const getAll =()=>{
         state.wish = []
+        currentIndex.value=0
         db.collection("wish").get().then(doc=>{
 
           doc.forEach((doc)=>{
@@ -64,19 +65,26 @@ const useStore=()=>{
           })
     }
     const nextIndex=()=>{
-        if(currentIndex.value < state.wish.length){
-            currentIndex.value++
-            state.currentWish= state.wish[currentIndex.value]
-        }else {
-            currentIndex.value =0
-            state.currentWish= state.wish[currentIndex.value]
+        if(state.wish.length > 0){
+            if(currentIndex.value < state.wish.length){
+                currentIndex.value = currentIndex.value+1
+                state.currentWish= state.wish[currentIndex.value]
+            }else {
+                currentIndex.value =0
+                state.currentWish= state.wish[currentIndex.value]
+            }
         }
 
     }
     const prevIndex=()=>{
-        if(currentIndex.value > state.wish.length){
-            currentIndex.value--
-            state.currentWish= state.wish[currentIndex.value]
+        if(state.wish.length > 0){
+            if(currentIndex.value > state.wish.length){
+                currentIndex.value = currentIndex.value-1
+                state.currentWish= state.wish[currentIndex.value]
+            }else {
+                currentIndex.value =0
+                state.currentWish= state.wish[currentIndex.value]
+            }
         }
     }
     return{

@@ -25,9 +25,22 @@
         </div>
 
         <div class="flex my-4 justify-center items-center">
-          <button @click="prevIndex"  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full mx-2  opacity-25 bg-indigo-300 text-gray-600"></button>
-          <button  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block rounded-full  mx-2 opacity-25 bg-indigo-300 text-gray-600"></button>
-          <button @click="nextIndex" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full  mx-2 opacity-25 bg-indigo-300 text-gray-600">JW</button>
+          <button @click="prevIndex"  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full mx-2  opacity-25  text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block rounded-full  mx-2 opacity-25 justify-center text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </button>
+          <button @click="nextIndex" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full  mx-2 opacity-25  text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+
+          </button>
         </div>
 
         <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
