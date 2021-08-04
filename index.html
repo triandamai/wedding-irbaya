@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
 </head>
 <body>
-<div class="sakura-falling overflow-hidden " style="overflow: hidden !important;"  id="sakura-falling"></div>
+<div class="sakura-falling overflow-x-hidden overflow-y-hidden" style="overflow-y: hidden !important;overflow-x: hidden !important;"  id="sakura-falling"></div>
 <div id="app"></div>
 <script type="module" src="/src/main.js"></script>
 
@@ -37,6 +37,7 @@
 
         this.el = document.getElementById(selector); // Defaults for the option object, which gets extended below.
         this.el.style.overflowX = 'hidden';
+        this.el.style.overflowY = 'hidden';
         var defaults = {
             className: 'sakura',
             // Classname of the petal. This corresponds with the css.

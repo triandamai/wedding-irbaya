@@ -1,15 +1,17 @@
 {
   "name": "wedding",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.5",
     "@googlemaps/js-api-loader": "^1.12.1",
+    "@kyvg/vue3-notification": "^2.3.3",
+    "firebase": "^8.8.1",
     "sakura-js": "^1.1.1",
+    "vue": "^3.0.5",
     "vue-router": "^4.0.10"
   },
   "devDependencies": {
@@ -19,5 +21,20 @@
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7",
     "vite": "^2.4.3"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 and Typescript in Vite.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triandamai/wedding-irbaya.git"
+  },
+  "keywords": [
+    "wedding"
+  ],
+  "author": "Trian Damai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/triandamai/wedding-irbaya/issues"
+  },
+  "homepage": "https://github.com/triandamai/wedding-irbaya#readme"
 }

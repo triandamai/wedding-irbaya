@@ -5,7 +5,7 @@
     <p class="text-blue-600  text-xs text-s py-2 px-4 rounded-md mx-6 text-center mt-10">
       Ucapkan Selamat & Do'a Untuk Irbaya & Opan
     </p>
-    <button class="text-white bg-blue-600 text-xs py-2 px-4 rounded-md mx-6">
+    <button @click="modal = true" class="text-white bg-blue-600 text-xs py-2 px-4 rounded-md mx-6">
       Tulis Do'a & Ucapan
     </button>
     <div class="">
@@ -19,20 +19,20 @@
         <div class="h-full relative z-6">
           <div>
             <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xs md:text-2xl">
-             Selamat Merit mba ku yang canti' manis tidak sombong dan baik hati sekali😊❤️
+              {{state.currentWish.wish}}
             </p>
           </div>
         </div>
 
         <div class="flex my-4 justify-center items-center">
-          <button  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full mx-2  opacity-25 bg-indigo-300 text-gray-600"></button>
+          <button @click="prevIndex"  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full mx-2  opacity-25 bg-indigo-300 text-gray-600"></button>
           <button  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block rounded-full  mx-2 opacity-25 bg-indigo-300 text-gray-600"></button>
-          <button  class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full  mx-2 opacity-25 bg-indigo-300 text-gray-600">JW</button>
+          <button @click="nextIndex" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-8 w-8 inline-block rounded-full  mx-2 opacity-25 bg-indigo-300 text-gray-600">JW</button>
         </div>
 
         <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
           <div class="text-center">
-            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Trian Damai</h2>
+            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">{{state.currentWish.name}}</h2>
           </div>
         </div>
       </div>
@@ -83,14 +83,14 @@
                   Ucapan selamat
                 </h3>
                 <div class="mt-2 flex flex-col">
-                  <input placeholder="Nama" class="p-2 mb-2"/>
-                  <textarea placeholder="Ucapan & Doa" class="p-2"/>
+                  <input placeholder="Nama" v-model="name" class="p-2 mb-2"/>
+                  <textarea placeholder="Ucapan & Doa" v-model="wish" class="p-2"/>
                 </div>
               </div>
             </div>
           </div>
           <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-            <a type="button" class="w-full inline-flex justify-center text-xs rounded-md border border-transparent shadow-sm px-3 py-2 bg-blue-600 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto">
+            <a type="button" @click="send" class="w-full inline-flex justify-center text-xs rounded-md border border-transparent shadow-sm px-3 py-2 bg-blue-600 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto">
               Kirim
             </a>
             <button type="button" @click="modal = false" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto">
@@ -104,12 +104,30 @@
 </template>
 
 <script>
-import {defineComponent,ref} from "vue";
+import {defineComponent, onMounted, ref} from "vue";
+import {useStore} from "../store/store.ts";
 
 export default defineComponent({
   setup(){
     const modal = ref(false)
-    return{modal}
+    const name = ref("")
+    const wish = ref("")
+
+    const {state,sendWish,nextIndex,prevIndex,getAll} = useStore()
+    onMounted(()=>{
+      getAll()
+      setTimeout(()=>{
+       if(state.wish.length > 0){
+         nextIndex()
+       }
+      },1000)
+    })
+    const send=()=>{
+      sendWish({wish:wish.value,name:name.value})
+      modal.value = false
+    }
+
+    return{modal,state,wish,name,nextIndex,prevIndex,send}
   }
 })
 </script>

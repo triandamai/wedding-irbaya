@@ -68,7 +68,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 24px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
 
@@ -98,7 +98,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
 
@@ -130,7 +130,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 10px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
   .title h1 {
@@ -149,7 +149,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 24px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
 
@@ -191,7 +191,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
   .title h1 {
@@ -210,7 +210,7 @@ img {
     margin: 0;
     padding: 0;
     font-size: 24px;
-    color: #e25c67;
+    color: #0a6fef;
     line-height: 1;
   }
 
