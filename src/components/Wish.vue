@@ -136,7 +136,10 @@ export default defineComponent({
       },1000)
     })
     const send=()=>{
+
       sendWish({wish:wish.value,name:name.value})
+      name.value = ""
+      wish.value = ""
       modal.value = false
     }
 

@@ -66,26 +66,41 @@ const useStore=()=>{
     }
     const nextIndex=()=>{
         if(state.wish.length > 0){
-            if(currentIndex.value < state.wish.length){
-                currentIndex.value = currentIndex.value+1
-                state.currentWish= state.wish[currentIndex.value]
+            if(currentIndex.value <= state.wish.length){
+
+                if(currentIndex.value == state.wish.length){
+                    currentIndex.value =0
+                }else {
+                    state.currentWish= state.wish[currentIndex.value]
+                    currentIndex.value = currentIndex.value+1
+                }
+
             }else {
-                currentIndex.value =0
                 state.currentWish= state.wish[currentIndex.value]
+                currentIndex.value =0
             }
         }
+
 
     }
     const prevIndex=()=>{
         if(state.wish.length > 0){
-            if(currentIndex.value > state.wish.length){
-                currentIndex.value = currentIndex.value-1
-                state.currentWish= state.wish[currentIndex.value]
+            if(currentIndex.value >= state.wish.length){
+
+                if(currentIndex.value == 0){
+                    currentIndex.value = state.wish.length-1
+                }else {
+                    state.currentWish = state.wish[currentIndex.value]
+                    currentIndex.value = currentIndex.value - 1
+                }
             }else {
-                currentIndex.value =0
+
                 state.currentWish= state.wish[currentIndex.value]
+                currentIndex.value =currentIndex.value - 1
             }
         }
+        console.log(currentIndex.value)
+        console.log(state.wish.length)
     }
     return{
         sendWish,
