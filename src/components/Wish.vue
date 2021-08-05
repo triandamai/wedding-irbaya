@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-
+<p class="text-center text-xs mt-6 mb-4">Made with ❤️ by <a href="https://trian.app" class="text-blue-600" target="_blank">Trian Damai</a></p>
 
     </div>
 
@@ -127,13 +127,18 @@ export default defineComponent({
     const wish = ref("")
 
     const {state,sendWish,nextIndex,prevIndex,getAll} = useStore()
+
+    const playWish=()=>{
+      setTimeout(()=>{
+
+          nextIndex()
+          playWish()
+
+      },3000)
+    }
     onMounted(()=>{
       getAll()
-      setTimeout(()=>{
-       if(state.wish.length > 0){
-         nextIndex()
-       }
-      },1000)
+      playWish()
     })
     const send=()=>{
 
