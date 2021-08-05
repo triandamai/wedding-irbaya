@@ -3,8 +3,9 @@
 This website build with Vue 3 + Typescript + Vite + Tailwindcss for my cousin wedding
 
 ## Screen
+![Invitation](/showcase/Capture.PNG)
+![Invitation](/showcase/Capture1.PNG)
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
 ### Contribute
 
