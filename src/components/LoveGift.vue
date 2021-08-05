@@ -42,7 +42,7 @@
 
 <script>
 import {defineComponent, ref} from "vue";
-import bg_event from "../assets/img/bg_event_2.jpg"
+import bg_event from "../assets/img/bg_event_2.webp"
 export default defineComponent({
   setup(){
 

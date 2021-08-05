@@ -6,7 +6,7 @@
 
     <div class="flex-col justify-center mt-16">
       <section id="media" class="w-full flex justify-center">
-        <img class="rounded-full w-1/2 max-w-1/2" :style="{width:'200px'}" src="../assets/img/amplo.jpg">
+        <img class="rounded-full w-1/2 max-w-1/2" :style="{width:'200px'}" src="../assets/img/amplo.webp">
       </section>
       <p class="dance-med">
         Dear

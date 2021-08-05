@@ -60,7 +60,7 @@
 
 <script>
 import {defineComponent} from "vue";
-import bg_event from "../assets/img/bg_event_2.jpg"
+import bg_event from "../assets/img/bg_event_2.webp"
 import MapSection from "./MapSection.vue";
 export default defineComponent({
   components: {MapSection},
