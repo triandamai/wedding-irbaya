@@ -20,9 +20,6 @@
         </a>
       </div>
 
-<!--      <div class="music">-->
-<!--        <audio src="../assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>-->
-<!--      </div>-->
 
     </section>
 
