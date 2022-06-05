@@ -2,7 +2,18 @@
   "hosting": [
     {
       "target": "irbayawedding",
-      "public": "dist",
+      "public": "template1/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "rizkawedding",
+      "public": "template2/dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
