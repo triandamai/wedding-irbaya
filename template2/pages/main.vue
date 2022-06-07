@@ -13,6 +13,7 @@ function scrollTo(el){
     <Event />
     <Gallery/>
     <Ayat/>
+    <Envelope/>
     <Protocol />
     <Wish/>
     <Footer/>

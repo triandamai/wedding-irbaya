@@ -12,6 +12,7 @@
     "postcss": "^8.4.14"
   },
   "dependencies": {
+    "firebase": "^9.8.2",
     "vue": "3"
   }
 }
